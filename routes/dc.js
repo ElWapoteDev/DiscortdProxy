@@ -3,6 +3,10 @@ const HttpService = require('../utils/HttpService')
 
 const router = express.Router();
 
+router.get('/ola', (req, res) => {
+    res.send('Hola como tas tilin')
+})
+
 router.get('/http', (req, res) => {
     const urlQury = req.query.url;
     let queryHeaders = req.headers;
