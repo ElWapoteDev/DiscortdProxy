@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // Importa el router
-const miRuta = require('../routes/dc');
+const miRuta = require('./routes/dc');
 
 // Usa el router con un path base
 app.use('/api', miRuta);
